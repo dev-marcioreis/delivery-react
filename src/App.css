@@ -18,10 +18,12 @@
 /*==========Root==========*/
 :root {
 
+    --bg-color: hsl(270, 20%, 98%);
     --white-color: hsl(0, 0%, 100%);
     --black-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 17%);
     --red-color: hsl(0, 87%, 62%);
+    --orange-color: hsl(39, 100%, 50%);
     --transparent-color: hsla(0, 0%, 0%, 0);
     --shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
     --shadow1: 0 4px 20px hsla(0, 0%, 4%, 0.103);
@@ -37,8 +39,21 @@ html {
     scroll-padding: 8rem;
 }
 body {
+    background: var(--bg-color);
     color: var(--text-color);
     line-height: 1.5;
+    width: 100vw;
+    height: 300rem;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+}
+button, input {
+    background: none;
 }
 ::-webkit-scrollbar{
     width: .5rem;
@@ -47,17 +62,11 @@ body {
     background: var(--text-color);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--red-color);
+    background: var(--orange-color);
 }
 .container {
     width: var(--container-lg);
     margin: 0 auto;
-}
-img {
-    width: 100%;
-}
-h1, h2, h3, h4, h5 {
-    line-height: 1.2;
 }
 .section {
     margin-block-start: 4rem;
@@ -66,6 +75,15 @@ h1, h2, h3, h4, h5 {
 .headers {
     text-align: center;
     margin-block-end: 3rem;
+}
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex2 {
+    display: flex;
+    justify-content: space-between;
 }
 .btn {
     display: inline-block;
@@ -83,16 +101,6 @@ h1, h2, h3, h4, h5 {
 .btn:hover {
     transform: scale(1.04);
 }
-.flex1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.flex2 {
-    display: flex;
-    justify-content: space-between;
-}
-button, input {
-    background: none;
-}
+
+
 
