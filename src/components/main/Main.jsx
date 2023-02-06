@@ -26,7 +26,6 @@ const Main = () => {
                 <Menu link={'#'} icon={<Favorite />} />
                 <Menu link={'#'} icon={<Sumarize />} />
                 <Menu link={'#'} icon={<Setting />} />
-                <div className="indicato"></div>
             </ul>
         </div>
     </>
