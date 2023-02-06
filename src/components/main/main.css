@@ -44,7 +44,7 @@
     position: relative;
     display: block;
     line-height: 3.2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
     color: hsla(14, 100%, 60%, 0.521);
     transition: var(--transition);
