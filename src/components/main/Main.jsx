@@ -24,10 +24,10 @@ const Main = () => {
   return (
     <>
         <main className="main">
-            <Banner />
+        <Banner />
             <div className="container">
                 <div className="main__container">
-                    <p>main</p>
+                    <p>main container</p>
                 </div>
                 <div className="right__menu">
                     <p>Right Menu</p>
