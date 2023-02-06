@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/*==========Google Fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Reset CSS==========*/
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*==========Root==========*/
+:root {
+
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 17%);
+    --red-color: hsl(0, 87%, 62%);
+    --transparent-color: hsla(0, 0%, 0%, 0);
+    --shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+    --shadow1: 0 4px 20px hsla(0, 0%, 4%, 0.103);
+
+    --transition: all 400ms ease;
+
+    --container-lg: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*==========Base==========*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 8rem;
+}
+body {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--text-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--red-color);
+}
+.container {
+    width: var(--container-lg);
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+}
+.section {
+    margin-block-start: 4rem;
+    padding: 2rem 2%;
+}
+.headers {
+    text-align: center;
+    margin-block-end: 3rem;
+}
+.btn {
+    display: inline-block;
+    margin-block-start: 1rem;
+    color: var(--white-color);
+    font-weight: 700;
+    background: var(--black-color);
+    border-radius: .2rem;
+    font-size: 1.4rem;
+    padding: .6rem 2rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover {
+    transform: scale(1.04);
+}
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+button, input {
+    background: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
