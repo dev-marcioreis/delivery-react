@@ -46,10 +46,14 @@
     line-height: 3.2rem;
     font-size: 1.2rem;
     text-align: center;
-    color: hsla(14, 100%, 60%, 0.521);
+    color: hsla(14, 100%, 60%, 0.445);
     transition: var(--transition);
 }
 .menu-icon:hover {
+    color: var(--orange-color);
+    transform: scale(1.2);
+}
+.menu-icon.active {
     color: var(--orange-color);
     transform: scale(1.2);
 }

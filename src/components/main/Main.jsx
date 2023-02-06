@@ -1,11 +1,25 @@
-import './main.css'
+import './style.css'
 import Menu from './Menu'
 import { AiFillHome as Home, AiFillHeart as Favorite, AiFillSetting as Setting } from 'react-icons/ai'
 import { BsFillChatFill as Chat } from 'react-icons/bs'
 import { FaUserAlt as Account } from 'react-icons/fa'
 import { MdBorderColor as Sumarize } from 'react-icons/md'
+import { useEffect } from 'react'
 
 const Main = () => {
+
+    useEffect(() => {
+        const menuLi = document.querySelectorAll('.menu__link .menu-icon')
+
+        function setMenuActive() {
+            menuLi.forEach(elem => elem.classList.remove('active'))
+            this.classList.add('active')
+        }
+        
+        menuLi.forEach(elem => elem.addEventListener('click', setMenuActive))
+
+    }, []);
+
   return (
     <>
         <main className="main">
