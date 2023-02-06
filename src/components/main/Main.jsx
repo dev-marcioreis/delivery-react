@@ -1,5 +1,6 @@
 import './style.css'
 import Menu from './Menu'
+import Banner from './Banner'
 import { AiFillHome as Home, AiFillHeart as Favorite, AiFillSetting as Setting } from 'react-icons/ai'
 import { BsFillChatFill as Chat } from 'react-icons/bs'
 import { FaUserAlt as Account } from 'react-icons/fa'
@@ -23,9 +24,10 @@ const Main = () => {
   return (
     <>
         <main className="main">
+            <Banner />
             <div className="container">
                 <div className="main__container">
-                    <p>main container</p>
+                    <p>main</p>
                 </div>
                 <div className="right__menu">
                     <p>Right Menu</p>
