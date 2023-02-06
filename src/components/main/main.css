@@ -1,0 +1,56 @@
+/*==========Main==========*/
+.main {
+    width: 100%;
+    height: auto;
+    margin-block-start: 4rem;
+}
+
+/*==========Right Menu==========*/
+
+
+/*==========Bottom Menu==========*/
+.bottom__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    background: var(--white-color);
+    z-index: 100;
+}
+.bottom__menu-list {
+    display: flex;
+}
+.menu__link {
+    position: relative;
+    width: 3.5rem;
+    height: 3rem;
+    z-index: 1;
+}
+.menu__link a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+}
+.menu-icon {
+    position: relative;
+    display: block;
+    line-height: 3.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: hsla(14, 100%, 60%, 0.521);
+    transition: var(--transition);
+}
+.menu-icon:hover {
+    color: var(--orange-color);
+    transform: scale(1.2);
+}

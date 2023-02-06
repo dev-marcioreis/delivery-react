@@ -18,7 +18,7 @@
 /*==========Root==========*/
 :root {
 
-    --bg-color: hsl(270, 20%, 98%);
+    --bg-color: hsla(14, 100%, 60%, 0.13);
     --white-color: hsl(0, 0%, 100%);
     --black-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 17%);
