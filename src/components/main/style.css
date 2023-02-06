@@ -96,3 +96,18 @@
     color: var(--orange-color);
     transform: scale(1.2);
 }
+
+
+/*==========Media Query==========*/
+@media (min-width: 1024px) {
+    .banner {
+        gap: 7rem;
+    }
+    .banner__text h3 {
+        font-size: 1.8rem;
+    }
+    .banner p {
+        font-size: 1.4rem;
+    }
+
+}
