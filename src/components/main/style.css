@@ -109,5 +109,13 @@
     .banner p {
         font-size: 1.4rem;
     }
+    .bottom__menu {
+        width: 25%;
+        margin-left: 50%;
+        transform: translate(-50%);
+        bottom: .5rem;
+        border-radius: 5rem;
+    }
+    
 
 }
