@@ -1,6 +1,6 @@
 import './category.css'
 import { AiOutlineArrowRight as Arrow } from 'react-icons/ai'
-import categoryItems from './categoryItems'
+import categoryItems from '../category/categoryItems'
 
 const Category = () => {
   return (

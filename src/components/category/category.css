@@ -65,8 +65,8 @@
         gap: 2rem;
      }
      .image-box {
-         width: 7rem;
-         height: 7rem;
+         width: 6rem;
+         height: 6rem;
      }
      .image-box img {
          transition: var(--transition);

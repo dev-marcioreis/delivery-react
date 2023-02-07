@@ -1,15 +1,3 @@
-/*==========Main==========*/
-.main {
-    width: 100%;
-    height: auto;
-    margin-block-start: 4rem;
-}
-
-
-/*==========Right Menu==========*/
-
-
-/*==========Bottom Menu==========*/
 .bottom__menu {
     position: fixed;
     bottom: 0;
@@ -57,24 +45,4 @@
 .menu-icon.active {
     color: var(--orange-color);
     transform: scale(1.2);
-}
-
-
-/*==========Media Query==========*/
-@media (min-width: 1024px) {
-    .main {
-        margin-block-start: 5rem;
-    }
-    .bottom__menu {
-        width: 25%;
-        margin-left: 50%;
-        transform: translate(-50%);
-        bottom: .5rem;
-        border-radius: 5rem;
-    }
-    .banner:hover img {
-        transform: translateX(3rem);
-    }
-    
-
 }
