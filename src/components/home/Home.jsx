@@ -6,6 +6,7 @@ import Menu from '../bottomMenu/BottomMenu'
 
 import { useEffect } from 'react'
 import Cart from '../cart/Cart'
+import Products from '../products/Products'
 
 
 
@@ -24,15 +25,12 @@ const Home = () => {
   return (
     <>
         <main className="home">
-            <Header />
             <div className="container">
+                <Header />
                 <Banner />
-                <div className="main__container">
-                    <Category />
-                </div>
-                <div className="right__menu">
-                    <Cart />
-                </div>
+                <Category />
+                <Products />
+                <Cart />
                 <Menu />
             </div>
         </main>

@@ -5,6 +5,9 @@ import Img4 from './images/cat4.png'
 import Img5 from './images/cat5.png'
 import Img6 from './images/cat6.jpg'
 import Img7 from './images/cat7.png'
+import Img8 from './images/cat8.png'
+import Img9 from './images/cat9.png'
+import Img10 from './images/cat10.png'
 
 const categoryItems = [
     {
@@ -41,6 +44,21 @@ const categoryItems = [
         id: 7,
         img: Img7,
         name: 'Esfirra'
+    },
+    {
+        id: 8,
+        img: Img8,
+        name: 'Taco'
+    },
+    {
+        id: 9,
+        img: Img9,
+        name: 'Sobremesa'
+    },
+    {
+        id: 10,
+        img: Img10,
+        name: 'Frango Frito'
     }
 ]
 
