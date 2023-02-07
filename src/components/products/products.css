@@ -86,6 +86,12 @@
         margin-block-start: 0;
         font-size: 1.1rem;
     }
+    .products__card .products-image img{
+        transition: var(--transition);
+    }
+    .products__card:hover img {
+        transform: translateY(-10px);
+    } 
     .bottom-content .ratings {
         font-size: .9rem;
         margin-block-start: 0;
@@ -98,6 +104,11 @@
     }
     .add-item .add-cart {
         margin: 1rem 0 0 .8rem;
+        transition: var(--transition);
+    }
+    .add-item:hover .add-cart {
+        transform: scale(1.4);
+        color: var(--orange-color);
     }
 
 }
