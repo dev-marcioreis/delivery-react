@@ -1,22 +1,22 @@
 import './style.css'
 import Menu from './Menu'
-import Banner from './Banner'
+import Banner from './banner/Banner'
 import { AiFillHome as Home, AiFillHeart as Favorite, AiFillSetting as Setting } from 'react-icons/ai'
 import { BsFillChatFill as Chat } from 'react-icons/bs'
 import { FaUserAlt as Account } from 'react-icons/fa'
 import { MdBorderColor as Sumarize } from 'react-icons/md'
 import { useEffect } from 'react'
+import { AiOutlineArrowRight as Arrow } from 'react-icons/ai'
+import categoryItems from './categoryItems'
 
 const Main = () => {
 
     useEffect(() => {
         const menuLi = document.querySelectorAll('.menu__link .menu-icon')
-
         function setMenuActive() {
             menuLi.forEach(elem => elem.classList.remove('active'))
             this.classList.add('active')
         }
-        
         menuLi.forEach(elem => elem.addEventListener('click', setMenuActive))
 
     }, []);
@@ -24,10 +24,29 @@ const Main = () => {
   return (
     <>
         <main className="main">
-        <Banner />
             <div className="container">
+                <Banner />
                 <div className="main__container">
-                    <p>main container</p>
+                    <div className="category">
+                        <div className="category__container">
+                            <h3>opções</h3>
+                            <div className="view-all">
+                                <p>todos</p>
+                                <i><Arrow /></i>
+                            </div>
+                        </div>
+                        {
+                            categoryItems.map(value => (
+                                <div className="row__content" key={value.id}>
+                                    <div className="category__card">
+                                        <div className="image-box">
+                                            <img src={value.img} alt={value.name} />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
                 <div className="right__menu">
                     <p>Right Menu</p>

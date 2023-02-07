@@ -18,7 +18,7 @@
 /*==========Root==========*/
 :root {
 
-    --bg-color: hsla(14, 100%, 60%, 0.13);
+    --bg-color: hsl(43, 100%, 89%);
     --white-color: hsl(0, 0%, 100%);
     --black-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 17%);
@@ -84,22 +84,6 @@ button, input {
 .flex2 {
     display: flex;
     justify-content: space-between;
-}
-.btn {
-    display: inline-block;
-    margin-block-start: 1rem;
-    color: var(--white-color);
-    font-weight: 700;
-    background: var(--black-color);
-    border-radius: .2rem;
-    font-size: 1.4rem;
-    padding: .6rem 2rem;
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition: var(--transition);
-}
-.btn:hover {
-    transform: scale(1.04);
 }
 
 
