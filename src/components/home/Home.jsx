@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-        <main className="main">
+        <main className="home">
             <Header />
             <div className="container">
                 <Banner />
@@ -32,8 +32,8 @@ const Home = () => {
                 <div className="right__menu">
                     <p>Right Menu</p>
                 </div>
+                <Menu />
             </div>
-            <Menu />
         </main>
     </>
   )

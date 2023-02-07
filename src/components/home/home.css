@@ -1,5 +1,5 @@
 /*==========Main==========*/
-.main {
+.home {
     width: 100%;
     height: auto;
     margin-block-start: 4rem;
@@ -11,19 +11,8 @@
 
 /*==========Media Query==========*/
 @media (min-width: 1024px) {
-    .main {
+    .home {
         margin-block-start: 5rem;
     }
-    .bottom__menu {
-        width: 25%;
-        margin-left: 50%;
-        transform: translate(-50%);
-        bottom: .5rem;
-        border-radius: 5rem;
-    }
-    .banner:hover img {
-        transform: translateX(3rem);
-    }
-    
 
 }
