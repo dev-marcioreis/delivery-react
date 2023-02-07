@@ -5,7 +5,7 @@
 }
 .products__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
     place-items: center;
     gap: 2rem;
 }
