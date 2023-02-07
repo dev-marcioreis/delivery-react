@@ -14,7 +14,7 @@ import items from '../products/productsItems'
 const Home = () => {
 
     const [productData, setProductData] = useState(
-        items.filter(elem => elem.itemId === 'buger01')
+        items.filter(elem => elem.itemId === 'buger')
     )
 
     useEffect(() => {

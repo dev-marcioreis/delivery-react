@@ -1,52 +1,52 @@
 const productsItems = [
     {
         id: 1,
-        itemId: "buger01",
+        itemId: "buger",
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger1.png?alt=media&token=319dfbe9-462b-46ea-8f38-6ca7a20319e0",
         name: "n1 Burger",
-        price: "7.5",
+        price: "29.90",
       },
       {
         id: 2,
-        itemId: "buger01",
+        itemId: "buger",
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger2.png?alt=media&token=b256ed7a-fe35-4051-9bf5-24f39b79f2b2",
         name: "n2 Burger",
-        price: "12",
+        price: "39.90",
       },
       {
         id: 3,
-        itemId: "buger01",
+        itemId: "buger",
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger3.png?alt=media&token=0ebe8311-6378-411b-9b6e-d7a6d2a106a2",
         name: "n3 Burger",
-        price: "12",
+        price: "12.90",
       },
       {
         id: 4,
-        itemId: "buger01",
+        itemId: "buger",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger4.png?alt=media&token=f219c72c-22b5-484a-9135-34bbb84e7faa",
         name: "n4 Burger",
-        price: "12",
+        price: "14.90",
       },
       {
         id: 5,
-        itemId: "buger01",
+        itemId: "buger",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger5.png?alt=media&token=e8963c79-af46-4f33-a28d-059f98f464e3",
         name: "n5 Burger",
-        price: "12",
+        price: "19.90",
       },
       {
         id: 6,
-        itemId: "buger01",
+        itemId: "buger",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger6.png?alt=media&token=f2b8febd-f0f8-48d7-9e1a-72d26b7bb36b",
         name: "n6 Burger",
-        price: "12",
+        price: "21.90",
       },
       {
         id: 7,
-        itemId: "pizza01",
+        itemId: "pizza",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizza1.png?alt=media&token=7ffbc681-5d86-4429-888b-9597f3e800e8",
         name: "Margherita",
@@ -55,7 +55,7 @@ const productsItems = [
       },
       {
         id: 8,
-        itemId: "pizza01",
+        itemId: "pizza",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizza2.png?alt=media&token=e9b65d7f-bd12-4c33-b172-729f1dfcf461",
         name: "Peppy Paneer",
@@ -64,7 +64,7 @@ const productsItems = [
       },
       {
         id: 9,
-        itemId: "pizza01",
+        itemId: "pizza",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizza3.png?alt=media&token=4dea85ad-c36d-405a-adcd-a9dfd0c63a6a",
         name: "Double Cheese",
@@ -73,7 +73,7 @@ const productsItems = [
       },
       {
         id: 10,
-        itemId: "pizza01",
+        itemId: "pizza",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizza4.png?alt=media&token=1e5259ff-3431-4c76-830e-80e9d7dcc01e",
         name: "Farm House",
@@ -82,7 +82,7 @@ const productsItems = [
       },
       {
         id: 11,
-        itemId: "pizza01",
+        itemId: "pizza",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizza5.png?alt=media&token=42bafbe4-f993-4aeb-93ee-57ea04b7cf1b",
         name: "Veg Extrava",
@@ -91,7 +91,7 @@ const productsItems = [
       },
       {
         id: 12,
-        itemId: "pizza01",
+        itemId: "pizza",
         imgSrc:
           "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizza6.png?alt=media&token=72a1e335-68d0-4b1c-8bbd-f28c656ce3b5",
         name: "Deluxe Veggie",
