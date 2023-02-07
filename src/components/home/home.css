@@ -1,18 +1,23 @@
-/*==========Main==========*/
 .home {
     width: 100%;
     height: auto;
     margin-block-start: 4rem;
 }
-
-
-/*==========Right Menu==========*/
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    place-items: center;
+    gap: 2rem;
+}
 
 
 /*==========Media Query==========*/
 @media (min-width: 1024px) {
     .home {
         margin-block-start: 5rem;
+    }
+    .products__container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
 
 }
