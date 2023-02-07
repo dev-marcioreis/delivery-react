@@ -6,8 +6,8 @@ import { BsFillChatFill as Chat } from 'react-icons/bs'
 import { FaUserAlt as Account } from 'react-icons/fa'
 import { MdBorderColor as Sumarize } from 'react-icons/md'
 import { useEffect } from 'react'
-import { AiOutlineArrowRight as Arrow } from 'react-icons/ai'
-import categoryItems from './categoryItems'
+import Category from './category/Category'
+
 
 const Main = () => {
 
@@ -27,26 +27,7 @@ const Main = () => {
             <div className="container">
                 <Banner />
                 <div className="main__container">
-                    <div className="category">
-                        <div className="category__container">
-                            <h3>opções</h3>
-                            <div className="view-all">
-                                <p>todos</p>
-                                <i><Arrow /></i>
-                            </div>
-                        </div>
-                        {
-                            categoryItems.map(value => (
-                                <div className="row__content" key={value.id}>
-                                    <div className="category__card">
-                                        <div className="image-box">
-                                            <img src={value.img} alt={value.name} />
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
+                    <Category />
                 </div>
                 <div className="right__menu">
                     <p>Right Menu</p>
