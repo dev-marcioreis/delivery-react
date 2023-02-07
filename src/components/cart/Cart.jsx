@@ -3,7 +3,7 @@ import './cart.css'
 const Cart = () => {
   return (
     <>
-        <p>Cart</p>
+        <p></p>
     </>
   )
 }

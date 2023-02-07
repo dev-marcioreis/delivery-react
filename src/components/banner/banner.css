@@ -47,9 +47,6 @@
 @media (min-width: 1024px) {
     .banner {
         justify-content: center;
-        width: 60%;
-        margin-left: 50%;
-        transform: translate(-50%);
         padding: .5rem;
     }
     .banner__text h3 {
