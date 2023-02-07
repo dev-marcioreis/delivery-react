@@ -1,8 +1,10 @@
 import './home.css'
 import Header from '../header/Header'
 import Banner from '../banner/Banner'
-import Category from '../category/Category'
 import Menu from '../bottomMenu/BottomMenu'
+
+import { AiOutlineArrowRight as Arrow } from 'react-icons/ai'
+import categoryItems from './category/categoryItems'
 
 import { useEffect, useState } from 'react'
 import Cart from '../cart/Cart'
@@ -14,7 +16,7 @@ import items from '../products/productsItems'
 const Home = () => {
 
     const [productData, setProductData] = useState(
-        items.filter(elem => elem.itemId === 'buger')
+        items.filter(elem => elem.itemId === 'all')
     )
 
     useEffect(() => {
@@ -25,7 +27,8 @@ const Home = () => {
         }
         menuLi.forEach(elem => elem.addEventListener('click', setMenuActive))
 
-    }, []);
+    }, [productData]);
+
 
   return (
     <>
@@ -33,7 +36,21 @@ const Home = () => {
             <div className="container">
                 <Header />
                 <Banner />
-                <Category />
+                <div className="category">
+                    <div className='category__container'>
+                        {
+                            categoryItems.map(value => (
+                                <div className="row__content" key={value.id}>
+                                    <div className="category__card">
+                                        <div className="image-box">
+                                            <img src={value.img} alt={value.name} />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
                 <div className='products__container'>
                     {
                         productData && productData.map(product => (
