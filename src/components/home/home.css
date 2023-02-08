@@ -35,10 +35,11 @@
 }
 .close-toggle {
     position: absolute;
-    top: .5rem;
-    left: .5rem;
-    font-size: 1.8rem;
-    color: var(--text-color);
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    color: var(--orange-color);
     cursor: pointer;
 }
 .cart-info {
