@@ -3,7 +3,7 @@ import Header from '../header/Header'
 import Banner from '../banner/Banner'
 import Category from './category/Category'
 import Products from '../products/Products'
-import InfoCard from './infoCard/InfoCard'
+import Cart from './cart/Cart'
 import Menu from '../bottomMenu/BottomMenu'
 
 import { useEffect, useState } from 'react'
@@ -44,8 +44,8 @@ const Home = () => {
                 </div>
                 <div className="right-menu">
                     <div className="info-container">
-                        <div className="card">
-                            <InfoCard />
+                        <div className="cart">
+                            <Cart />
                         </div>
                     </div>
                 </div>
