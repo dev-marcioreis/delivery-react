@@ -3,7 +3,7 @@
 Iniciando novo projeto em React 18.<br>
 Este projeto será um delivery de comida.<br>
 Link de acesso: https://dev-marcioreis.github.io/delivery-react/ <br>
-![image](https://user-images.githubusercontent.com/122680054/217334380-fe5aad1a-8cf0-4089-95f7-106bd67efcde.png)
+![image](https://user-images.githubusercontent.com/122680054/217579921-c986615b-e2d2-4f13-b33a-653ccad2a015.png)
 
 
 Getting Started with Create React App
