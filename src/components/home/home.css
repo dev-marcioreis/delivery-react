@@ -29,11 +29,21 @@
     transition: var(--transition);
     z-index: 999;
 }
+.cart-info {
+    margin-block-end: .5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--white-color);
+}
+.cart-info h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: .5rem 0;
+}
 .cart__container {
     width: 100%;
-    min-height: 280px;
-    max-height: 300px;
-    margin-block-start: 10px;
+    height: 25rem;
+    margin-block-start: .8rem;
     overflow-y: scroll;
     overflow-x: hidden;
 }
