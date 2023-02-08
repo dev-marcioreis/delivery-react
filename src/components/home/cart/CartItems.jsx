@@ -1,4 +1,4 @@
-import './style.css'
+import './cartItems.css'
 
 const CartItems = ( {name, img, qty, price} ) => {
   return (
