@@ -36,8 +36,8 @@
      cursor: pointer;
  }
  .image-box {
-     width: 4rem;
-     height: 4rem;
+     width: 4.5rem;
+     height: 4.5rem;
  }
  .image-box img {
      object-fit: contain;

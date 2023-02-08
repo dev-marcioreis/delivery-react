@@ -3,7 +3,6 @@ import Header from '../header/Header'
 import Banner from '../banner/Banner'
 import Menu from '../bottomMenu/BottomMenu'
 
-import { AiOutlineArrowRight as Arrow } from 'react-icons/ai'
 import categoryItems from './category/categoryItems'
 
 import { useEffect, useState } from 'react'
