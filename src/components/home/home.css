@@ -29,6 +29,17 @@
     transition: var(--transition);
     z-index: 999;
 }
+.cart__container {
+    width: 100%;
+    min-height: 280px;
+    max-height: 300px;
+    margin-block-start: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.cart__container::-webkit-scrollbar {
+    display: none;
+}
 
 
  /*==========Media Query==========*/
