@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                     <div className="cart__container">
                         <div className="cart-items">
-                            <CartItems name={'Burger'} img={'https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger1.png?alt=media&token=319dfbe9-462b-46ea-8f38-6ca7a20319e0'} qty={'4'} price={'29.90'} />
+                            <CartItems name={'Burger'} img={'https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger1.png?alt=media&token=319dfbe9-462b-46ea-8f38-6ca7a20319e0'} price={'29.90'} />
                         </div>
                     </div>
                     <div className="cart-total">

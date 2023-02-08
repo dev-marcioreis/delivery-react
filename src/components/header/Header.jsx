@@ -1,7 +1,6 @@
 import './header.css'
 import { RiRestaurant2Fill as LogoIcon } from 'react-icons/ri'
 import { MdDeliveryDining as Delivery } from 'react-icons/md'
-import { BsFillArrowLeftSquareFill as Menu } from 'react-icons/bs'
 import { useEffect } from 'react'
 
 const Header = () => {
