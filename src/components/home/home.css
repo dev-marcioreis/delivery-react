@@ -50,6 +50,34 @@
 .cart__container::-webkit-scrollbar {
     display: none;
 }
+.cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4rem 0;
+    margin: .5rem 0;
+    width: 100%;
+}
+.cart-total h3, span {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cart-total span {
+    font-weight: 700;
+}
+.check-out {
+    width: 100%;
+    padding: .4rem;
+    box-shadow: var(--shadow1);
+    border-radius: .3rem;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: var(--orange-color);
+}
 
 
  /*==========Media Query==========*/

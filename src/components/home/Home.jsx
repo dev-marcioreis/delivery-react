@@ -52,6 +52,11 @@ const Home = () => {
                             <CartItems name={'Burger'} img={'https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger1.png?alt=media&token=319dfbe9-462b-46ea-8f38-6ca7a20319e0'} qty={'4'} price={'29.90'} />
                         </div>
                     </div>
+                    <div className="cart-total">
+                        <h3>total</h3>
+                        <span>R$ 29.90</span>
+                    </div>
+                    <button className='check-out'>pagar</button>
                 </div>
                 <Menu />
             </div>
