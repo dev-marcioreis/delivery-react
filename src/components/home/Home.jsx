@@ -1,15 +1,14 @@
 import './home.css'
 import Header from '../header/Header'
 import Banner from '../banner/Banner'
+import Category from './category/Category'
+import Products from '../products/Products'
+import InfoCard from './infoCard/InfoCard'
 import Menu from '../bottomMenu/BottomMenu'
 
-import categoryItems from './category/categoryItems'
-
 import { useEffect, useState } from 'react'
-import Cart from '../cart/Cart'
-import Products from '../products/Products'
-
 import items from '../products/productsItems'
+
 
 
 const Home = () => {
@@ -35,21 +34,7 @@ const Home = () => {
             <div className="container">
                 <Header />
                 <Banner />
-                <div className="category">
-                    <div className='category__container'>
-                        {
-                            categoryItems.map(value => (
-                                <div className="row__content" key={value.id}>
-                                    <div className="category__card">
-                                        <div className="image-box">
-                                            <img src={value.img} alt={value.name} />
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
+                <Category />
                 <div className='products__container'>
                     {
                         productData && productData.map(product => (
@@ -57,7 +42,13 @@ const Home = () => {
                         ))
                     }
                 </div>
-                <Cart />
+                <div className="right-menu">
+                    <div className="info-container">
+                        <div className="card">
+                            <InfoCard />
+                        </div>
+                    </div>
+                </div>
                 <Menu />
             </div>
         </main>
