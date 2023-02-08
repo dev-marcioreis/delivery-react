@@ -6,6 +6,8 @@ import Products from '../products/Products'
 import CartItems from './cart/CartItems'
 import Menu from '../bottomMenu/BottomMenu'
 
+import { AiFillCloseSquare as CloseMenu } from 'react-icons/ai'
+
 import { useEffect, useState } from 'react'
 import items from '../products/productsItems'
 
@@ -18,11 +20,16 @@ const Home = () => {
 
     useEffect(() => {
         const menuLi = document.querySelectorAll('.menu__link .menu-icon')
+        const closeMenu = document.querySelector('.close-toggle')
         function setMenuActive() {
             menuLi.forEach(elem => elem.classList.remove('active'))
             this.classList.add('active')
         }
         menuLi.forEach(elem => elem.addEventListener('click', setMenuActive))
+
+        closeMenu.addEventListener('click', () => {
+            document.querySelector('.right-menu').classList.remove('active')
+        })
 
     }, [productData]);
 
@@ -42,6 +49,7 @@ const Home = () => {
                     }
                 </div>
                 <div className="right-menu">
+                    <i className='close-toggle'><CloseMenu /></i>
                     <div className='cart-info'>
                         <h2>meu carrinho</h2>
                     </div>

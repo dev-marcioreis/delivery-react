@@ -7,9 +7,9 @@ import { useEffect } from 'react'
 const Header = () => {
 
     useEffect(() => {
-        const menu = document.querySelector('.toggleMenu')
+        const openMenu = document.querySelector('.toggleMenu')
 
-        menu.addEventListener('click', () => {
+        openMenu.addEventListener('click', () => {
             document.querySelector('.right-menu').classList.add('active')
         })
 

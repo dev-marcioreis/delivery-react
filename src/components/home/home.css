@@ -17,7 +17,7 @@
  /*==========Right Menu==========*/
 .right-menu {
     position: fixed;
-    top: 3.6rem;
+    top: 0;
     right: 0;
     transform: translateX(100%);
     width: 100vw;
@@ -32,6 +32,12 @@
 }
 .right-menu.active {
     transform: translateX(0%);
+}
+.close-toggle {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: 1.8rem;
 }
 .cart-info {
     margin-block-start: 1rem;
