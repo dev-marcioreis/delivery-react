@@ -53,10 +53,11 @@
     text-transform: capitalize;
 }
 .cart__container {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 25rem;
     margin-block-start: .8rem;
-    margin-left: .5rem;
     overflow-y: scroll;
     overflow-x: hidden;
 }
