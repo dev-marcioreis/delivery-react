@@ -45,8 +45,6 @@
     margin-block-start: .8rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    border-top: 2px solid var(--white-color);
-    border-bottom: 2px solid var(--white-color);
     padding: 0 .1rem .5rem .1rem;
 }
 .cart__container::-webkit-scrollbar {
