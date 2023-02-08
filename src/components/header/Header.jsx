@@ -2,8 +2,19 @@ import './header.css'
 import { RiRestaurant2Fill as LogoIcon } from 'react-icons/ri'
 import { MdDeliveryDining as Delivery } from 'react-icons/md'
 import { BsFillArrowLeftSquareFill as Menu } from 'react-icons/bs'
+import { useEffect } from 'react'
 
 const Header = () => {
+
+    useEffect(() => {
+        const menu = document.querySelector('.toggleMenu')
+
+        menu.addEventListener('click', () => {
+            document.querySelector('.right-menu').classList.add('active')
+        })
+
+    }, [])
+
   return (
     <>
         <header className='header'>
@@ -16,8 +27,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="toggle-menu">
-                <i className='toggle-icon'><Menu /></i>
+            <div className="toggleMenu">
+                <i className='open toggle-icon'><Menu /></i>
             </div>
         </header>
     </>

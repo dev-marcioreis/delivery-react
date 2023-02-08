@@ -10,8 +10,6 @@ import { useEffect, useState } from 'react'
 import items from '../products/productsItems'
 
 
-
-
 const Home = () => {
 
     const [productData, setProductData] = useState(

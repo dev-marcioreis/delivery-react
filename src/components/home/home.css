@@ -19,6 +19,7 @@
     position: fixed;
     top: 3.6rem;
     right: 0;
+    transform: translateX(100%);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -28,6 +29,9 @@
     background: var(--bg-color);
     transition: var(--transition);
     z-index: 999;
+}
+.right-menu.active {
+    transform: translateX(0%);
 }
 .cart-info {
     margin-block-start: 1rem;
