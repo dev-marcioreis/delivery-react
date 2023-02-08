@@ -67,3 +67,15 @@
     font-size: .9rem;
     font-weight: 700;
 }
+
+
+ /*==========Media Query==========*/
+ @media (min-width: 1024px) {
+    .cart-item {
+        gap: 5rem;
+    }
+
+ }
+
+
+

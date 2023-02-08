@@ -117,4 +117,29 @@
      .image-box:hover img {
          transform: scale(1.1);
      }
+     .right-menu {
+        width: 50vw;
+    }
+    .cart-info {
+        margin-block-start: 2.5rem;
+    }
+
+    
  }
+
+
+ /*==========Media Query==========*/
+@media (min-width: 1024px) {
+    .cart-info h2 {
+        font-size: 1.3rem;
+    }
+    .cart-total {
+        margin-block-start: 5rem;
+    }
+    .cart-total, .check-out {
+        width: 50%;
+    }
+    .cart-total h3, span {
+        font-size: 1.3rem;
+    }
+}
