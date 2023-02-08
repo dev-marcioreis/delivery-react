@@ -38,10 +38,12 @@
     top: .5rem;
     left: .5rem;
     font-size: 1.8rem;
+    color: var(--text-color);
+    cursor: pointer;
 }
 .cart-info {
-    margin-block-start: 1rem;
-    margin-block-end: .5rem;
+    margin-block-start: 3rem;
+    margin-block-end: 1rem;
     text-align: center;
 }
 .cart-info h2 {

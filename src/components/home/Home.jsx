@@ -6,7 +6,7 @@ import Products from '../products/Products'
 import CartItems from './cart/CartItems'
 import Menu from '../bottomMenu/BottomMenu'
 
-import { AiFillCloseSquare as CloseMenu } from 'react-icons/ai'
+import { AiOutlineClose as CloseMenu } from 'react-icons/ai'
 
 import { useEffect, useState } from 'react'
 import items from '../products/productsItems'

@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const Header = () => {
 
     useEffect(() => {
-        const openMenu = document.querySelector('.toggleMenu')
+        const openMenu = document.querySelector('.header__cart')
 
         openMenu.addEventListener('click', () => {
             document.querySelector('.right-menu').classList.add('active')
@@ -26,9 +26,6 @@ const Header = () => {
                         <small>0</small>
                     </div>
                 </div>
-            </div>
-            <div className="toggleMenu">
-                <i className='open toggle-icon'><Menu /></i>
             </div>
         </header>
     </>
