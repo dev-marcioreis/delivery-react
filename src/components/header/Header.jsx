@@ -21,9 +21,6 @@ const Header = () => {
                 <i className="logo"><LogoIcon /></i>
                 <div className="header__cart">
                     <i className='delivery-icon'><Delivery /></i>
-                    <div className="cart__content">
-                        <small>0</small>
-                    </div>
                 </div>
             </div>
         </header>
