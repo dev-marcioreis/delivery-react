@@ -10,6 +10,7 @@ import { AiOutlineClose as CloseMenu } from 'react-icons/ai'
 
 import { useEffect, useState } from 'react'
 import items from '../products/productsItems'
+import { useStateValue } from '../../Provider'
 
 
 const Home = () => {
@@ -17,6 +18,8 @@ const Home = () => {
     const [productData, setProductData] = useState(
         items.filter(elem => elem.itemId === 'all')
     )
+
+    const [{cart}, dispatch] = useStateValue()
 
     useEffect(() => {
         const menuLi = document.querySelectorAll('.menu__link .menu-icon')
@@ -31,7 +34,7 @@ const Home = () => {
             document.querySelector('.right-menu').classList.remove('active')
         })
 
-    }, [productData]);
+    }, [productData, cart]);
 
 
   return (
@@ -53,16 +56,24 @@ const Home = () => {
                     <div className='cart-info'>
                         <h2>meu carrinho</h2>
                     </div>
-                    <div className="cart__container">
-                        <div className="cart-items">
-                            <CartItems name={'Burger'} img={'https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger1.png?alt=media&token=319dfbe9-462b-46ea-8f38-6ca7a20319e0'} price={'29.90'} />
-                        </div>
-                    </div>
-                    <div className="cart-total">
-                        <h3>total</h3>
-                        <span>R$ 29.90</span>
-                    </div>
-                    <button className='check-out'>pagar</button>
+                    {
+                        !cart ? <div></div> : <>
+                            <div className="cart__container">
+                                <div className="cart-items">
+                                    {
+                                        cart && cart.map(data => (
+                                            <CartItems key={data.id} itemId={data.id} name={data.name} img={data.imgSrc} price={data.price} />
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            <div className="cart-total">
+                                <h3>total</h3>
+                                <span>R$ 29.90</span>
+                            </div>
+                            <button className='check-out'>pagar</button>
+                        </>
+                    }
                 </div>
                 <Menu />
             </div>

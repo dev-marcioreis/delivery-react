@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './cartItems.css'
 
-const CartItems = ( {name, img, price} ) => {
+const CartItems = ( {name, img, price, itemId} ) => {
 
     const [cartQuantity, setCartQuantity] = useState(1)
+    
 
   return (
     <>

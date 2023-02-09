@@ -1,8 +1,27 @@
 import './products.css'
 import { RiStarSFill as Stars } from 'react-icons/ri'
 import { MdAddShoppingCart as AddCart } from 'react-icons/md'
+import { useEffect, useState } from 'react'
+import items from './productsItems'
+import { useStateValue } from '../../Provider'
+import { actionType } from '../../reducer'
+
+let cartData = []
 
 const Products = ( {itemId, img, name, price} ) => {
+
+    const [isCart, setCart] = useState(null)
+    const [{}, dispatch] = useStateValue()
+
+    useEffect(() => {
+        if(isCart) {
+            cartData.push(isCart)
+            dispatch({
+                type: actionType.setCart,
+                cart: cartData
+            })
+        }
+    }, [isCart])
 
   return (
     <>
@@ -23,7 +42,7 @@ const Products = ( {itemId, img, name, price} ) => {
                         </div>
                         <h3 className="price"><span>R$</span> {price}</h3>
                         <div className="add-item">
-                            <button className='add-cart'><i><AddCart /></i></button>
+                            <button className='add-cart' onClick={() => setCart(items.find(elem => elem.id === itemId))}><i><AddCart /></i></button>
                         </div>
                     </div>
                  </div>
