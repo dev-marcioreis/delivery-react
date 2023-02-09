@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './cartItems.css'
 import { useStateValue } from '../../../Provider'
+import { actionType } from '../../../reducer'
+
 let cartItems = []
 
 const CartItems = ( {name, img, price, itemId} ) => {
@@ -18,6 +20,13 @@ const CartItems = ( {name, img, price, itemId} ) => {
         if(action === 'add') {
             setCartQuantity(cartQuantity +1)
         } else {
+            if(cartQuantity === 1) {
+                cartItems.pop(id)
+                dispatch({
+                    type: actionType.setCart,
+                    cart: cartItems
+                })
+            }
             setCartQuantity(cartQuantity -1)
         }
     } 
