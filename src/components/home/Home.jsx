@@ -57,7 +57,7 @@ const Home = () => {
                         <h2>meu carrinho</h2>
                     </div>
                     {
-                        !cart ? <div></div> : <>
+                        !cart ? <></> : <>
                             <div className="cart__container">
                                 <div className="cart-items">
                                     {

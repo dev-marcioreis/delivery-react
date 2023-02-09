@@ -67,8 +67,8 @@
     background: var(--bg-color);
 }
 .add-item .add-cart {
-    font-size: 1.4rem;
-    color: var(--text-color);
+    font-size: 1.7rem;
+    color: var(--orange-color);
     margin: 1rem 0 0 .5rem;
     cursor: pointer;
 }

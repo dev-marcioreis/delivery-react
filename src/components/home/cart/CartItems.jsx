@@ -11,6 +11,7 @@ const CartItems = ( {name, img, price, itemId} ) => {
     const [{cart}, dispatch] = useStateValue()
     const [itemPrice, setItemPrice] = useState(parseInt(cartQuantity) * parseFloat(price))
 
+
     useEffect(() => {
         cartItems = cart
         setItemPrice(parseInt(cartQuantity) * parseFloat(price))
@@ -29,6 +30,7 @@ const CartItems = ( {name, img, price, itemId} ) => {
             }
             setCartQuantity(cartQuantity -1)
         }
+
     } 
     
 
