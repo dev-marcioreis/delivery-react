@@ -1,6 +1,6 @@
 import './products.css'
 import { RiStarSFill as Stars } from 'react-icons/ri'
-import { MdAddShoppingCart as AddCart } from 'react-icons/md'
+import { MdDeliveryDining as Delivery } from 'react-icons/md'
 import { useEffect, useState } from 'react'
 import items from './productsItems'
 import { useStateValue } from '../../Provider'
@@ -42,7 +42,7 @@ const Products = ( {itemId, img, name, price} ) => {
                         </div>
                         <h3 className="price"><span>R$</span> {price}</h3>
                         <div className="add-item">
-                            <button className='add-cart' onClick={() => setCart(items.find(elem => elem.id === itemId))}><i><AddCart /></i></button>
+                            <button className='add-cart' onClick={() => setCart(items.find(elem => elem.id === itemId))}><i><Delivery /></i></button>
                         </div>
                     </div>
                  </div>
