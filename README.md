@@ -4,7 +4,7 @@ Iniciando novo projeto em React 18.<br>
 Este projeto será um delivery de comida.<br>
 Link de acesso: https://dev-marcioreis.github.io/delivery-react/ <br>
 ![image](https://user-images.githubusercontent.com/122680054/217840847-df26a301-9d05-44cf-8518-2f962226e298.png)
-![image](https://user-images.githubusercontent.com/122680054/217605914-67d3b75d-18c3-4be2-a566-703da873f589.png)
+![image](https://user-images.githubusercontent.com/122680054/217841429-03a6dc67-0ea7-494a-b861-bd03d1df9222.png)
 
 
 
