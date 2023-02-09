@@ -11,7 +11,7 @@
     min-width: 4rem;
     height: 4rem;
     min-height: 4rem;
-    border-radius: .5rem;
+    border-radius: 50%;
     background: var(--orange-color);
 }
 .item-image img {
@@ -22,14 +22,14 @@
 .item-section {
     display: flex;
     align-items: center;
-    margin-left: .5rem;
+    margin-left: .3rem;
 }
 .count {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     font-size: .7rem;
     color: var(--white-color);
@@ -37,7 +37,7 @@
 }
 .item-name {
     font-size: .9rem;
-    font-weight: 700;
+    font-weight: 600;
     padding: .2rem;
     text-transform: uppercase;
 }
@@ -48,8 +48,8 @@
 .quantity {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-left: .5rem;
+    gap: 1.5rem;
+    margin-left: .4rem;
     padding: 0 .4rem;
     border-radius: .5rem;
     border: 2px solid var(--orange-color);
@@ -65,7 +65,7 @@
 }
 .price {
     font-size: .9rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 

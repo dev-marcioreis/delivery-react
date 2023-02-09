@@ -1,9 +1,26 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './cartItems.css'
+import { useStateValue } from '../../../Provider'
+let cartItems = []
 
 const CartItems = ( {name, img, price, itemId} ) => {
 
     const [cartQuantity, setCartQuantity] = useState(1)
+    const [{cart}, dispatch] = useStateValue()
+    const [itemPrice, setItemPrice] = useState(parseInt(cartQuantity) * parseFloat(price))
+
+    useEffect(() => {
+        cartItems = cart
+        setItemPrice(parseInt(cartQuantity) * parseFloat(price))
+    }, [cartQuantity])
+
+    const upQuantity = (action, id) => {
+        if(action === 'add') {
+            setCartQuantity(cartQuantity +1)
+        } else {
+            setCartQuantity(cartQuantity -1)
+        }
+    } 
     
 
   return (
@@ -18,13 +35,13 @@ const CartItems = ( {name, img, price, itemId} ) => {
                     <h3 className="item-name">{name}</h3>
                     <div className="item-quantity">
                         <div className="quantity">
-                            <button>-</button>
-                            <button>+</button>
+                            <button onClick={() => upQuantity('remove', itemId)}>-</button>
+                            <button onClick={() => upQuantity('add', itemId)}>+</button>
                         </div>
                     </div>
                 </div>
                 <div className="item-price">
-                    <span className='price'>R$ {price}</span>
+                    <span className='price'>R$ {itemPrice.toFixed(2)}</span>
                 </div>
             </div>
         </section>
