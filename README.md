@@ -6,7 +6,7 @@ Este projeto é um delivery de comida.
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 React
 
 ## ✒️ Autor
